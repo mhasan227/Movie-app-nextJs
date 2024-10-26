@@ -107,7 +107,7 @@ export default function Home() {
                     </div>
                   ):
         (<>
-          <div className="my-6 flex justify-between items-center py-5 px-16">
+          <div className="my-6 flex flex-col gap-4 justify-between items-center py-5 md:px-16 md:flex-row">
             <Image
               loading="lazy"
               alt=""
