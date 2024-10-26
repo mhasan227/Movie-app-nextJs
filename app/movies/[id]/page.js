@@ -21,7 +21,7 @@ export async function generateStaticParams() {
   }));
 }
 
-export async function getMovieDetails(id) {
+async function getMovieDetails(id) {
   const [movieRes, creditsRes, recommendationsRes] = await Promise.all([
     fetch(`${BASE_URL}/movie/${id}?api_key=${API_KEY}`),
     fetch(`${BASE_URL}/movie/${id}/credits?api_key=${API_KEY}`),
